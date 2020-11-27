@@ -1,0 +1,42 @@
+{
+  "name": "ecommerce-gexam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon build/app.js",
+    "dev": "nodemon --exec babel-node src/app.js",
+    "build": "babel src/ -d ./build/",
+    "generate-sdata": "nodemon --exec babel-node src/starterData/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.11.5",
+    "chance": "^1.1.7",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.7.0",
+    "formidable": "^1.2.2",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.20",
+    "make-promises-safe": "^5.1.0",
+    "moment": "^2.29.1",
+    "mongoose": "^5.10.15",
+    "regenerator-runtime": "^0.13.7",
+    "validator": "^13.1.1"
+  }
+}
