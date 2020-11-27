@@ -1,0 +1,443 @@
+{
+	"info": {
+		"_postman_id": "d80fdcf7-3ecd-4d18-a702-575017d92d7a",
+		"name": "Gebey-ecommerce-api",
+		"description": "Gebeya Backend API exam",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "signup user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"molli.jennings\",\"email\":\"tggi@rozeksew.tr\",\"password\":\"13693c57\",\"createdAt\":\"2073-03-14T00:24:19.192Z\",\"updatedAt\":\"2073-03-14T00:39:19.192Z\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/users/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create admin user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"username\": \"__TTesfanur\",\r\n        \"email\": \"__ttesfanur@tesfannet.com\",\r\n        \"password\": \"123dfhglkuesrdhkjgbv4\",\r\n        \"isAdmin\": true\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/users/createadmin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"users",
+						"createadmin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"gordonmitchell\",\"email\":\"bbavdo@ime.sl\",\"password\":\"8718233f\",\"createdAt\":\"2100-08-03T07:39:27.040Z\",\"updatedAt\":\"2100-08-03T08:17:27.040Z\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signout user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"gordonmitchell\",\"email\":\"bbavdo@ime.sl\",\"password\":\"8718233f\",\"createdAt\":\"2100-08-03T07:39:27.040Z\",\"updatedAt\":\"2100-08-03T08:17:27.040Z\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/users/signout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"users",
+						"signout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRnZ2lAcm96ZWtzZXcudHIiLCJ1c2VybmFtZSI6Im1vbGxpLmplbm5pbmdzIiwiaWF0IjoxNjA2NDk3NzM0LCJleHAiOjE2MDY1ODQxMzR9.cksHom6VUvnpjMJQSdzLXjaVOaCjRz3VvRfIPfISiNU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"betty.wade\",\"email\":\"mirwojtar@notlow.tf\",\"password\":\"96f2e90e\",\"createdAt\":\"2087-09-08T12:19:19.829Z\",\"updatedAt\":\"2087-09-08T13:17:19.829Z\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/products/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get  product by id",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"3PwN^mmm__\",\r\n  \"description\":\r\n    \"Palizwa alasegi vugneson goovu onlulam rulwi ec tofikito vaf zil ne ozi aw ziwgigu macdi dijcicsul.\",\r\n  \"category\": \"Toys & Games\",\r\n  \"vendor\": \"Adobe Systems Incorporated\",\r\n  \"quantity\": 0,\r\n  \"price\": 371.824,\r\n  \"photoUrl\": \"//www.gravatar.com/avatar/52fda380d354d661fb6affce89c62581.png\",\r\n  \"user\": \"5fc10c120468af49b4374143\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/products/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"products",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add new product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "newproduct",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "200",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "special",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "/C:/Users/Local Admin/Pictures/Camera Roll/WIN_20200112_16_14_17_Pro.jpg"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete  product by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"3PwN^mmm__\",\r\n  \"description\":\r\n    \"Palizwa alasegi vugneson goovu onlulam rulwi ec tofikito vaf zil ne ozi aw ziwgigu macdi dijcicsul.\",\r\n  \"category\": \"Toys & Games\",\r\n  \"vendor\": \"Adobe Systems Incorporated\",\r\n  \"quantity\": 0,\r\n  \"price\": 371.824,\r\n  \"photoUrl\": \"//www.gravatar.com/avatar/52fda380d354d661fb6affce89c62581.png\",\r\n  \"user\": \"5fc10c120468af49b4374143\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/products/5fc11131b4157247e4c6e7beb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"products",
+						"5fc11131b4157247e4c6e7beb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update a product",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "newproduct",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "200",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "special",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "/C:/Users/Local Admin/Pictures/Camera Roll/WIN_20200112_16_14_17_Pro.jpg"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add multiple products",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc2ZhbnVyckByb3pla3Nldy50ciIsInVzZXJuYW1lIjoidGVzZmFudXJyIiwiaWF0IjoxNjA2NTA5OTg3LCJleHAiOjE2MDY1OTYzODd9.2EYOWWrLm0oju7BbHJJzgosgyOovmHjHL1NjHMpdTDw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"betty.wade\",\"email\":\"mirwojtar@notlow.tf\",\"password\":\"96f2e90e\",\"createdAt\":\"2087-09-08T12:19:19.829Z\",\"updatedAt\":\"2087-09-08T13:17:19.829Z\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/products/addmultipleproducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"products",
+						"addmultipleproducts"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

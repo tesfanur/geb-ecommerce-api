@@ -1,21 +1,7 @@
 //load 3rd party modules
 import chance from "chance";
 import moment from "moment";
-// import dotenv from "dotenv";
-// import bcrypt from "bcryptjs";
-// import { Schema, model } from "mongoose";
 
-//laod local modules
-// import User from "../models/User";
-// import Order from "../models/Order";
-// import Product from "../models/Product";
-// import { User, Order, Product } from "../models";
-// import connectToDB from "../config";
-
-//load environment variables
-// dotenv.config();
-
-// connectToDB();
 //generate started random data for test
 const randomData = chance();
 const productCategories = [
